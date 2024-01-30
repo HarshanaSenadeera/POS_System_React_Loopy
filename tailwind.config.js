@@ -1,5 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+
+  screens: {
+    'tablet': '640px',
+    // => @media (min-width: 640px) { ... }
+
+    'laptop': '1024px',
+    // => @media (min-width: 1024px) { ... }
+
+    'desktop': '1280px',
+    // => @media (min-width: 1280px) { ... }
+  },
   content: [
 
     "./index.html",
@@ -14,7 +25,7 @@ module.exports = {
         oderbar : 'rgba(37, 36, 36, 1)',
         serchbar : 'rgba(45, 48, 62, 1)',
         button : 'rgba(229, 103, 63, 1)',
-        dishes : 'rgba(31, 29, 43, 1)'
+        dishes : 'rgba(31, 29, 43, 1)',
       },
       height :{
         sidebar: [550]
