@@ -1,88 +1,84 @@
 import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
+import Hot from '../../assests/Hot.png'
+import Cold from '../../assests/Cold.png'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 
 const products = [
     {
         id: 1,
-        name: 'Throwback Hip Bag',
+        name: 'Anzac biscuit tarts',
         href: '#',
-        color: 'Salmon',
         price: '$90.00',
         quantity: 1,
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-01.jpg',
+        imageSrc: Hot,
         imageAlt: 'Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt.',
     },
     {
         id: 1,
-        name: 'Throwback Hip Bag',
+        name: 'Anzac biscuit tarts',
         href: '#',
-        color: 'Salmon',
         price: '$90.00',
         quantity: 1,
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-01.jpg',
+        imageSrc: Cold,
         imageAlt: 'Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt.',
     },
     {
         id: 1,
-        name: 'Throwback Hip Bag',
+        name: 'Anzac biscuit tarts',
         href: '#',
-        color: 'Salmon',
         price: '$90.00',
         quantity: 1,
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-01.jpg',
+        imageSrc: Hot,
         imageAlt: 'Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt.',
     },
     {
         id: 1,
-        name: 'Throwback Hip Bag',
+        name: 'Anzac biscuit tarts',
         href: '#',
-        color: 'Salmon',
         price: '$90.00',
         quantity: 1,
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-01.jpg',
+        imageSrc: Hot,
         imageAlt: 'Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt.',
     },
     {
         id: 2,
-        name: 'Medium Stuff Satchel',
+        name: 'Anzac biscuit tarts',
         href: '#',
-        color: 'Blue',
         price: '$32.00',
         quantity: 1,
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-02.jpg',
+        imageSrc: Cold,
         imageAlt:
             'Front of satchel with blue canvas body, black straps and handle, drawstring top, and front zipper pouch.',
     },
     {
         id: 2,
-        name: 'Medium Stuff Satchel',
+        name: 'Anzac biscuit tarts',
         href: '#',
-        color: 'Blue',
         price: '$32.00',
         quantity: 1,
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-02.jpg',
+        imageSrc: Hot,
         imageAlt:
             'Front of satchel with blue canvas body, black straps and handle, drawstring top, and front zipper pouch.',
     },
     {
         id: 2,
-        name: 'Medium Stuff Satchel',
+        name: 'Anzac biscuit tarts',
         href: '#',
-        color: 'Blue',
         price: '$32.00',
         quantity: 1,
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-02.jpg',
+        imageSrc: Cold,
         imageAlt:
             'Front of satchel with blue canvas body, black straps and handle, drawstring top, and front zipper pouch.',
     },
     // More products...
 ]
 
-export default function Example() {
+export default function SelectProducts() {
     const [open, setOpen] = useState(true)
 
     return (
+
         <Transition.Root show={open} as={Fragment}>
             <Dialog as="div" className="relative z-10 " onClose={setOpen}>
                 <Transition.Child
@@ -94,12 +90,14 @@ export default function Example() {
                     leaveFrom="opacity-100"
                     leaveTo="opacity-0"
                 >
-                    <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity " />
+                    <div className="fixed inset-0   transition-opacity " />
                 </Transition.Child>
 
                 <div className="fixed inset-0 overflow-hidden ">
                     <div className="absolute inset-0 overflow-hidden ">
+
                         <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10 ">
+
                             <Transition.Child
                                 as={Fragment}
                                 enter="transform transition ease-in-out duration-500 sm:duration-700"
@@ -109,11 +107,32 @@ export default function Example() {
                                 leaveFrom="translate-x-0"
                                 leaveTo="translate-x-full"
                             >
+
                                 <Dialog.Panel className="pointer-events-auto w-screen max-w-md ">
-                                    <div className="flex h-full flex-col overflow-y-scroll bg-oderbar shadow-xl">
+                                    <div
+                                        className="flex h-full flex-col overflow-y-hidden bg-oderbar shadow-xl rounded-md">
+                                        <div className="flex justify-around">
+                                            <h2 className="text-white font-bold  flex-wrap"> Total cost :</h2>
+                                            <h2 className="text-white font-bold "> Total items :</h2>
+                                        </div>
+                                        <div
+                                            className="flex justify-center gap-7 text-white items-start flex-wrap h-auto">
+                                            <button className="bg-button h-10 w-20 rounded-md">Dine in</button>
+                                            <button className="bg-button h-10 w-20 rounded-md">To go</button>
+                                            <button className="bg-button h-10 w-20 rounded-md">Delivery</button>
+                                        </div>
+                                        <hr className="mt-3"/>
+                                        <div className="flex text-white justify-between">
+                                            <h2 className="flex-wrap ml-5">Item</h2>
+                                            <h2 className="flex-wrap ">qty</h2>
+                                            <h2 className="flex-wrap mr-20">Price</h2>
+                                        </div>
+                                        <hr className="mt-3"/>
                                         <div className="flex-1 overflow-y-auto px-4 py-6 sm:px-6">
-                                            <div className="flex items-start justify-between mb-5">
-                                                <Dialog.Title className="text-lg font-medium  text-white">Total
+
+                                            {/*<div className="flex items-start justify-between mb-5">
+
+                                                 <Dialog.Title className="text-lg font-medium  text-white">Total
                                                     cost</Dialog.Title>
                                                 <Dialog.Title className="text-lg font-medium text-white">Total
                                                     items</Dialog.Title>
@@ -130,14 +149,14 @@ export default function Example() {
                                                     </button>
                                                 </div>
 
-                                            </div>
+                                            </div>*/}
 
-                                            <div className="flex justify-center gap-7 text-white items-start flex-wrap">
+                                            {/*<div className="flex justify-center gap-7 text-white items-start flex-wrap">
                                                 <button className="bg-button h-10 w-20 rounded-md">Dine in</button>
                                                 <button className="bg-button h-10 w-20 rounded-md">To go</button>
                                                 <button className="bg-button h-10 w-20 rounded-md">Delivery</button>
                                             </div>
-
+*/}
                                             <div className="mt-8">
                                                 <div className="flow-root">
                                                     <ul role="list" className="-my-6 divide-y divide-gray-200">
@@ -161,7 +180,7 @@ export default function Example() {
                                                                             </h3>
                                                                             <p className="ml-4">{product.price}</p>
                                                                         </div>
-                                                                        <p className="mt-1 text-sm text-white">{product.color}</p>
+                                                                       {/* <p className="mt-1 text-sm text-white">{product.color}</p>*/}
                                                                     </div>
                                                                     <div
                                                                         className="flex flex-1 items-end justify-between text-sm te">
@@ -184,7 +203,21 @@ export default function Example() {
                                             </div>
                                         </div>
 
-                                        {/*<div className="border-t border-gray-200 px-4 py-6 sm:px-6">
+                                        <div
+                                            className="text-white font-bold flex-shrink flex flex-col items-start flex-wrap ml-5 mb-3">
+                                            <h1>Discount</h1>
+                                            <h1>Service Charge</h1>
+                                            <h1>Sub total</h1>
+                                        </div>
+                                        <div
+                                            className="flex justify-center flex-wrap flex-shrink flex-col align-bottom mb-5">
+                                            <button
+                                                className="bg-button w-auto h-10 rounded-md items-center justify-center flex text-white">Continue
+                                                to payment
+                                            </button>
+                                        </div>
+
+                                        {/* <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
                                             <div className="flex justify-between text-base font-medium text-gray-900">
                                                 <p>Subtotal</p>
                                                 <p>$262.00</p>

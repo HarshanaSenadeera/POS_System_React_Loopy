@@ -1,6 +1,7 @@
 import logo from '../../assests/logo new.png'
 import home from '../../assests/Home.png'
 import {useEffect, useState} from "react";
+import SelectProducts from "../selectedProducts/product";
 export default function Main() {
 
     /*Set Date and time*/
@@ -108,8 +109,8 @@ export default function Main() {
 
                 <div className="w-auto h-auto">
 
-                    <div className="w-full h-screen bg-oderbar rounded-2xl flex flex-col gap-y-3 flex-shrink">
-                        {/* Total cost and items */}
+                   {/* <div className="w-full h-screen bg-oderbar rounded-2xl flex flex-col gap-y-3 flex-shrink">
+                         Total cost and items
                         <div className="flex justify-around">
                             <h2 className="text-white font-bold  flex-wrap"> Total cost :</h2>
                             <h2 className="text-white font-bold "> Total items :</h2>
@@ -119,9 +120,10 @@ export default function Main() {
                             <button className="bg-button h-10 w-20 rounded-md">Dine in</button>
                             <button className="bg-button h-10 w-20 rounded-md">To go</button>
                             <button className="bg-button h-10 w-20 rounded-md">Delivery</button>
-                        </div>
+                        </div>*/}
 
-                        <hr/>
+                        <SelectProducts/>
+                       {/* <hr/>
 
                         <div className="flex text-white justify-between">
                             <h2 className="flex-wrap">Item</h2>
@@ -129,16 +131,16 @@ export default function Main() {
                             <h2 className="flex-wrap">Price</h2>
                         </div>
 
-                        {/*Bottom items*/}
+                        Bottom items
                         <div className="mt-auto ">
-                        {/* Price handler */}
+                         Price handler
                         <div className="text-white font-bold flex-shrink flex flex-col items-start flex-wrap ml-5 mb-3">
                             <h1>Discount</h1>
                             <h1>Service Charge</h1>
                             <h1>Sub total</h1>
                         </div>
 
-                        {/* Continue payment button */}
+                         Continue payment button
                         <div className="flex justify-center flex-wrap flex-shrink flex-col align-bottom mb-5">
                             <button
                                 className="bg-button w-auto h-10 rounded-md items-center justify-center flex text-white">Continue
@@ -146,7 +148,7 @@ export default function Main() {
                             </button>
                         </div>
                         </div>
-                    </div>
+                    </div>*/}
                 </div>
             </div>
 
