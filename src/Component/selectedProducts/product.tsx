@@ -77,6 +77,90 @@ const products = [
 export default function SelectProducts() {
     const [open, setOpen] = useState(true)
 
+
+    /*load all products list*/
+    const [openSelectProducts, setOpenSelectProducts] = useState(false);
+
+    const handleButtonClick = () => {
+        setOpenSelectProducts(true);
+    };
+
+    /*Remove all product list*/
+   /* const [products, setProducts] = useState([
+
+        {
+            id: 1,
+            name: 'Anzac biscuit tarts',
+            href: '#',
+            price: '$90.00',
+            quantity: 1,
+            imageSrc: Hot,
+            imageAlt: 'Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt.',
+        },
+        {
+            id: 1,
+            name: 'Anzac biscuit tarts',
+            href: '#',
+            price: '$90.00',
+            quantity: 1,
+            imageSrc: Cold,
+            imageAlt: 'Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt.',
+        },
+        {
+            id: 1,
+            name: 'Anzac biscuit tarts',
+            href: '#',
+            price: '$90.00',
+            quantity: 1,
+            imageSrc: Hot,
+            imageAlt: 'Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt.',
+        },
+        {
+            id: 1,
+            name: 'Anzac biscuit tarts',
+            href: '#',
+            price: '$90.00',
+            quantity: 1,
+            imageSrc: Hot,
+            imageAlt: 'Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt.',
+        },
+        {
+            id: 2,
+            name: 'Anzac biscuit tarts',
+            href: '#',
+            price: '$32.00',
+            quantity: 1,
+            imageSrc: Cold,
+            imageAlt:
+                'Front of satchel with blue canvas body, black straps and handle, drawstring top, and front zipper pouch.',
+        },
+        {
+            id: 2,
+            name: 'Anzac biscuit tarts',
+            href: '#',
+            price: '$32.00',
+            quantity: 1,
+            imageSrc: Hot,
+            imageAlt:
+                'Front of satchel with blue canvas body, black straps and handle, drawstring top, and front zipper pouch.',
+        },
+        {
+            id: 2,
+            name: 'Anzac biscuit tarts',
+            href: '#',
+            price: '$32.00',
+            quantity: 1,
+            imageSrc: Cold,
+            imageAlt:
+                'Front of satchel with blue canvas body, black straps and handle, drawstring top, and front zipper pouch.',
+        },
+    ]);
+    const handleRemoveButtonClick = (productId: number) => {
+        // Filter out the product with the specified ID
+        const updatedProducts = products.filter(product => product.id !== productId);
+        // Update the state with the new array
+        setProducts(updatedProducts);
+    };*/
     return (
 
         <Transition.Root show={open} as={Fragment}>
@@ -190,9 +274,11 @@ export default function SelectProducts() {
                                                                             <button
                                                                                 type="button"
                                                                                 className="font-medium text-indigo-600 hover:text-indigo-500"
-                                                                            >
+                                                                                /*onClick={() => handleRemoveButtonClick(product.id)
+                                                                                }*/>
                                                                                 Remove
                                                                             </button>
+
                                                                         </div>
                                                                     </div>
                                                                 </div>

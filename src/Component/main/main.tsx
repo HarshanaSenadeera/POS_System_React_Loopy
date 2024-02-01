@@ -17,6 +17,12 @@ export default function Main() {
     }, []);
 
 
+    const [openSelectProducts, setOpenSelectProducts] = useState(false);
+
+    const handleButtonClick = () => {
+        setOpenSelectProducts(true);
+    };
+
     return (
         <div className="bg-customgray w-screen flex flex-wrap flex-shrink">
 
@@ -87,7 +93,7 @@ export default function Main() {
                 <div className="flex justify-center mt-3">
                     <nav className="flex">
                         <ul className="flex space-x-4 md:space-x-12 text-white font-bold">
-                            <li><a href="#" className="hover:text-homeicon">Hot Dishes</a></li>
+                            <li><a href="<SelectProducts/>" className="hover:text-homeicon" onClick={handleButtonClick}>Hot Dishes</a></li>
                             <li><a href="#" className="hover:text-homeicon">Cold Dishes</a></li>
                             <li><a href="#" className="hover:text-homeicon">Soup</a></li>
                             <li><a href="#" className="hover:text-homeicon">Grill</a></li>
