@@ -95,6 +95,11 @@ export default function Conformation() {
         { id: 'paypal', label: 'PayPal', imageUrl: 'paypalImage.jpg' },
         { id: 'cash', label: 'Cash', imageUrl: 'cashImage.jpg' },
     ];
+
+    /*Order type*/
+    const orderTypeOptions = ["Option 1", "Option 2", "Option 3"]; // Add order type options here
+    const [orderType, setOrderType] = useState('');
+
     return (
 
         <div className="absolute top-0 right-0 w-7/12 h-full bg-gray-200 flex">
@@ -194,12 +199,12 @@ export default function Conformation() {
             <div className="flex bg-dishes h-screen w-2/3 flex-wrap text-white">
 
                 <div className="max-w-md mx-auto bg-dishes rounded-md shadow-md w-full ">
-                    <h2 className="text-2xl font-bold mt-16">Payment</h2>
+                    <h2 className="text-2xl font-bold ">Payment</h2>
                     <h2 className="text-1xl ">3 payment method available</h2>
 
                     <hr className="mb-5 mt-5"/>
                     {/* Payment Options */}
-                    <div className="flex space-x-4 ">
+                    <div className="flex space-x-4 mt-8">
                         {paymentOptions.map((option) => (
                             <div
                                 key={option.id}
@@ -215,23 +220,25 @@ export default function Conformation() {
                     </div>
 
                     <form onSubmit={handleSubmit}>
-                        <h2 className="text-2xl font-bold mt-16">Payment Method</h2>
-                        {/* Card Number Input */}
+                        <h2 className="text-2xl font-bold mt-2">Payment Method</h2>
+
+                        {/* Cardholder Name Input */}
                         <div className="mb-4 mt-5">
-                            <label htmlFor="cardNumber" className="block text-sm font-medium  text-white ">
+                            <label htmlFor="cardholderName" className="block text-sm font-medium  text-white ">
                                 Cardholder Name
                             </label>
                             <input
                                 type="text"
-                                id="cardNumber"
+                                id="cardholderName"
                                 className="mt-1 p-2 w-full border rounded-md bg-dishes"
-                                placeholder="Enter card number"
-                                value={cardNumber}
-                                onChange={(e) => setCardNumber(e.target.value)}
+                                placeholder="Enter cardholder name"
+                                value={cvc}
+                                onChange={(e) => setCvc(e.target.value)}
                                 required
                             />
                         </div>
 
+                        {/* Card Number Input */}
                         <div className="mb-4">
                             <label htmlFor="cardNumber" className="block text-sm font-medium  text-white ">
                                 Card Number
@@ -247,7 +254,7 @@ export default function Conformation() {
                             />
                         </div>
 
-                        {/* Expiry Date and CVC */}
+                        {/* First set of Expiry Date and CVC */}
                         <div className="grid grid-cols-2 gap-4 mb-4">
                             <div>
                                 <label htmlFor="expiryDate" className="block text-sm font-medium text-white flex-grow">
@@ -277,17 +284,68 @@ export default function Conformation() {
                                     required
                                 />
                             </div>
-                            <hr className="mb-5 mt-5"/>
                         </div>
 
+                        <hr className="mb-5 mt-5"/>
+
+                        {/* Order Type & Table No */}
+                        <div className="grid grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <label htmlFor="orderType" className="block text-sm font-medium text-white flex-grow">
+                                    Order Type
+                                </label>
+                                {/* Replace the input with a select dropdown */}
+                                <select
+                                    id="orderType"
+                                    className="mt-1 p-2 w-full border rounded-md bg-dishes"
+                                    value={orderType}
+                                    onChange={(e) => setOrderType(e.target.value)}
+                                    required
+                                >
+                                    {/* Map over the options and create option elements */}
+                                    {orderTypeOptions.map((option, index) => (
+                                        <option key={index} value={option}>
+                                            {option}
+                                        </option>
+                                    ))}
+                                </select>
+                            </div>
+                            <div>
+                                <label htmlFor="cvc" className="block text-sm font-medium text-white">
+                                    CVC
+                                </label>
+                                <input
+                                    type="text"
+                                    id="cvc"
+                                    className="mt-1 p-2 w-full border rounded-md bg-dishes"
+                                    placeholder="CVC"
+                                    value={cvc}
+                                    onChange={(e) => setCvc(e.target.value)}
+                                    required
+                                />
+                            </div>
+                        </div>
+
+                        <hr className="mb-5 mt-5"/>
+
                         {/* Submit Button */}
-                        <button
-                            type="submit"
-                            className="bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600 transition duration-300"
-                        >
-                            Submit Payment
-                        </button>
+                        <div className="flex">
+                            <button
+                                type="submit"
+                                className="bg-homeicon text-white p-3 rounded-md hover:bg-blue-600 transition duration-300 mr-5"
+                            >
+                                Submit Payment
+                            </button>
+                            <button
+                                type="submit"
+                                className="bg-homeicon text-white p-3 rounded-md hover:bg-blue-600 transition duration-300"
+                            >
+                                Submit Payment
+                            </button>
+
+                        </div>
                     </form>
+
                 </div>
             </div>
         </div>
