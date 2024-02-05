@@ -1,7 +1,9 @@
 import {Fragment, useState} from "react";
 import Hot from "../../assests/Hot.png";
 import Cold from "../../assests/Cold.png";
-import { CiCreditCard1 } from "react-icons/ci";
+import creditCard from '../../assests/atm-card.png'
+import payPal from '../../assests/payPal.png'
+import cash from '../../assests/money.png'
 
 
 
@@ -92,9 +94,9 @@ export default function Conformation() {
     };
 
     const paymentOptions = [
-        { id: 'creditCard', label: 'Credit Card', imageUrl: 'creditCardImage.jpg' },
-        { id: 'paypal', label: 'PayPal', imageUrl: 'paypalImage.jpg' },
-        { id: 'cash', label: 'Cash', imageUrl: 'cashImage.jpg' },
+        { id: 'creditCard', label: 'Credit Card', imageUrl: creditCard },
+        { id: 'paypal', label: 'PayPal', imageUrl: payPal },
+        { id: 'cash', label: 'Cash', imageUrl: cash },
     ];
 
     /*Order type*/
@@ -210,7 +212,7 @@ export default function Conformation() {
                             <div
                                 key={option.id}
                                 className={`flex items-center p-4 border text-white rounded-md cursor-pointer ${
-                                    paymentOption === option.id ? 'bg-blue-200' : ''
+                                    paymentOption === option.id ? 'bg-button' : ''
                                 }`}
                                 onClick={() => setPaymentOption(option.id)}
                             >
