@@ -93,7 +93,7 @@ export default function Settings() {
                     <div className="w-2/12 ">
                         {/*Setting Options*/}
                         <div className="flex bg-customblack  h-auto flex-col text-white items-center justify-center space-y-2 rounded-md flex-wrap flex-shrink-1 w-auto mt-5 ">
-                            <button className="btn hover:bg-button w-full rounded-md text-left py-4 px-4">
+                            <button className="btn hover:bg-button w-full rounded-md text-left py-6 px-4">
                                 <RiHeart3Fill/> Appereance
                                 <span className="text-sm block">Dark and Light mode, Font size</span>
                             </button>
@@ -114,24 +114,11 @@ export default function Settings() {
                                 <span className="text-sm block">Configure Password, PIN, etc</span>
                             </button>
                             <button className="btn hover:bg-button w-full rounded-md text-left py-2 px-4">
-                                <CiLock />Security
-                                <span className="text-sm block">Configure Password, PIN, etc</span>
-                            </button>
-                            <button className="btn hover:bg-button w-full rounded-md text-left py-2 px-4">
                                 <PiWarningCircleLight />
                                 About Us
                                 <span className="text-sm block">Find out more about Posly</span>
                             </button>
-                            <button className="btn hover:bg-button w-full rounded-md text-left py-2 px-4">
-                                <PiWarningCircleLight />
-                                About Us
-                                <span className="text-sm block">Find out more about Posly</span>
-                            </button>
-                            <button className="btn hover:bg-button w-full rounded-md text-left py-2 px-4">
-                                <PiWarningCircleLight />
-                                About Us
-                                <span className="text-sm block">Find out more about Posly</span>
-                            </button>
+
 
                             {/* Add more buttons as needed */}
                         </div>

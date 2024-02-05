@@ -12,9 +12,9 @@ function App() {
       {/* <Main/>*/}
     {/*   <Product/>*/}
       {/* <SelectProducts/>*/}
-       <Conformation/>
+       {/*<Conformation/>*/}
       {/* <SelectBarTop/>*/}
-       {/*<Settings/>*/}
+       <Settings/>
    </>
   );
 }
