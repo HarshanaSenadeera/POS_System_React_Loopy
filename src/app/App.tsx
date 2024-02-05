@@ -4,15 +4,17 @@ import Product from "../Component/mainProducts/product";
 import SelectProducts from "../Component/selectedProducts/product";
 import Conformation from "../Component/Comformation/Comformation";
 import SelectBarTop from "../Component/selectBarTop/SelectBarTop";
+import Settings from "../Component/settings/settings";
 function App() {
   return (
    <>
 
-       {/*<Main/>*/}
+      {/* <Main/>*/}
     {/*   <Product/>*/}
       {/* <SelectProducts/>*/}
-       <Conformation/>
+      {/* <Conformation/>*/}
       {/* <SelectBarTop/>*/}
+       <Settings/>
    </>
   );
 }

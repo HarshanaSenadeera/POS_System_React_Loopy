@@ -1,6 +1,7 @@
 import {Fragment, useState} from "react";
 import Hot from "../../assests/Hot.png";
 import Cold from "../../assests/Cold.png";
+import { CiCreditCard1 } from "react-icons/ci";
 
 
 
@@ -312,13 +313,13 @@ export default function Conformation() {
                             </div>
                             <div>
                                 <label htmlFor="cvc" className="block text-sm font-medium text-white">
-                                    CVC
+                                    Table no.
                                 </label>
                                 <input
                                     type="text"
                                     id="cvc"
                                     className="mt-1 p-2 w-full border rounded-md bg-dishes"
-                                    placeholder="CVC"
+                                    placeholder="Table no."
                                     value={cvc}
                                     onChange={(e) => setCvc(e.target.value)}
                                     required
