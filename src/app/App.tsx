@@ -6,17 +6,20 @@ import Conformation from "../Component/Comformation/Comformation";
 import SelectBarTop from "../Component/selectBarTop/SelectBarTop";
 import Settings from "../Component/settings/settings";
 import EditableDish from "../Component/editableDishes/EditableDish";
+import {Board} from "../Component/DashboardNew/Board";
 function App() {
   return (
    <>
 
-      {/* <Main/>*/}
-    {/*   <Product/>*/}
+       {/*<Main/>*/}
+      {/* <Product/>*/}
       {/* <SelectProducts/>*/}
-       {/*<Conformation/>*/}
-     {/*  <SelectBarTop/>*/}
-       <Settings/>
+      {/* <Conformation/>*/}
+    {/*   <SelectBarTop/>*/}
+       {/*<Settings/>*/}
       {/* <EditableDish/>*/}
+
+       <Board/>
    </>
   );
 }

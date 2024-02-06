@@ -91,7 +91,8 @@ export default function Settings() {
                     </div>
 
                     {/*Product management */}
-                    <div className="flex bg-customblack h-full flex-col text-white p-5 rounded-md flex-wrap flex-shrink-1 w-9/12 gap-5 mr-20 mt-1">
+                    <div
+                        className="flex bg-customblack h-full flex-col text-white p-5 rounded-md flex-wrap flex-shrink-1 w-9/12 gap-5 mr-20 mt-1">
 
                         <div className="flex justify-between flex-wrap">
                             <div className="text-white flex text-2xl">
@@ -123,7 +124,7 @@ export default function Settings() {
                         <hr className="mt-2"/>
 
                         {/*Add edit items*/}
-                        <div className="flex flex-row gap-5 flex-wrap h-96 overflow-y-auto">
+                        <div className="flex flex-row gap-5 flex-wrap h-80 overflow-y-auto">
                             <div className="flex text-button">
                                 <button
                                     className="w-44 h-52 bg-customblack mt-5 rounded-md border-2 border-button border-dotted">+
@@ -131,6 +132,22 @@ export default function Settings() {
                                 </button>
                             </div>
                             <EditableDish/>
+                        </div>
+
+                        <div className="flex">
+                            <button
+                                type="submit"
+                                className="bg-customblack text-white p-3 rounded-md hover:bg-button transition duration-300 mr-5 border-2 border-button"
+                            >
+                                Discard Changes
+                            </button>
+                            <button
+                                type="submit"
+                                className="bg-customblack text-white p-3 rounded-md hover:bg-button transition duration-300 border-2 border-button"
+                            >
+                                Save Changes
+                            </button>
+
                         </div>
                     </div>
                 </div>

@@ -3,6 +3,7 @@ import home from '../../assests/Home.png'
 import {useEffect, useState} from "react";
 import SelectProducts from "../selectedProducts/product";
 import MainNavBar from "../mainNavBar/MainNavBar";
+import Product from "../mainProducts/product";
 export default function Main() {
 
     /*Set Date and time*/
@@ -76,6 +77,10 @@ export default function Main() {
                 <div className="flex">
                     <h3 className="text-white font-bold">Choose dishes</h3>
                 </div>
+
+                <Product/>
+
+
             </div>
 
 

@@ -10,7 +10,7 @@ export default function SelectBarTop() {
             <div
                 className="flex justify-center gap-7 text-white items-start flex-wrap h-auto">
                 <button className="bg-button h-10 w-20 rounded-md">Dine in</button>
-                <button className="bg-button h-10 w-20 rounded-md">To go</button>
+                <button className="bg-button h-10 w-20 rounded-md">Take Away</button>
                 <button className="bg-button h-10 w-20 rounded-md">Delivery</button>
             </div>
             <hr className="mt-3"/>
