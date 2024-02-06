@@ -1,5 +1,3 @@
-import logo from "../../assests/logo new.png";
-import home from "../../assests/Home.png";
 import {useEffect, useState} from "react";
 import React from 'react';
 import { RiHeart3Fill } from "react-icons/ri";
@@ -10,6 +8,7 @@ import { PiWarningCircleLight } from "react-icons/pi";
 import { CiLock } from "react-icons/ci";
 import { MdOutlineManageAccounts } from "react-icons/md";
 import MainNavBar from "../mainNavBar/MainNavBar";
+import EditableDish from "../editableDishes/EditableDish";
 
 export default function Settings() {
 
@@ -124,10 +123,9 @@ export default function Settings() {
                         </div>
                     </div>
 
-                    <div
-                        className="flex bg-customblack  h-auto flex-col text-white p-5 rounded-md flex-wrap flex-shrink-1 w-9/12 mt-5 mr-20">
+                    <div className="flex bg-customblack  h-auto flex-col text-white p-5 rounded-md flex-wrap flex-shrink-1 w-9/12 mt-5 mr-20">
 
-                        <div className="flex justify-between">
+                        <div className="flex justify-between flex-wrap">
                             <div className="text-white flex text-2xl">
                                 Product Management
                             </div>
@@ -141,9 +139,9 @@ export default function Settings() {
 
                         </div>
 
-                        <div className="flex justify-start mt-3">
+                        <div className="flex justify-start mt-3 flex-wrap ">
                             <nav className="flex">
-                                <ul className="flex space-x-4 md:space-x-12 text-white font-bold">
+                                <ul className="flex space-x-4 md:space-x-12 text-white font-bold flex-wrap">
                                     <li><a href="<SelectProducts/>" className="hover:text-homeicon">Hot Dishes</a></li>
                                     <li><a href="#" className="hover:text-homeicon">Cold Dishes</a></li>
                                     <li><a href="#" className="hover:text-homeicon">Soup</a></li>
@@ -156,7 +154,17 @@ export default function Settings() {
 
                         <hr className="mt-5"/>
 
+                        {/*Add edit items*/}
+                        <div className="flex flex-row gap-5 flex-wrap">
+                            <div className="flex text-button">
+                                <button
+                                    className="w-44 h-60 bg-customblack mt-5 rounded-md border-2 border-button border-dotted">+
+                                    Add new dishes
+                                </button>
 
+                            </div>
+                            <EditableDish/>
+                        </div>
                     </div>
                 </div>
 

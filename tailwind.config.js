@@ -26,6 +26,8 @@ module.exports = {
         serchbar : 'rgba(45, 48, 62, 1)',
         button : 'rgba(229, 103, 63, 1)',
         dishes : 'rgba(31, 29, 43, 1)',
+        editbutton : 'rgb(250,144,105)',
+
 
       },
       height :{

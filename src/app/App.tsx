@@ -5,6 +5,7 @@ import SelectProducts from "../Component/selectedProducts/product";
 import Conformation from "../Component/Comformation/Comformation";
 import SelectBarTop from "../Component/selectBarTop/SelectBarTop";
 import Settings from "../Component/settings/settings";
+import EditableDish from "../Component/editableDishes/EditableDish";
 function App() {
   return (
    <>
@@ -15,6 +16,7 @@ function App() {
        {/*<Conformation/>*/}
       {/* <SelectBarTop/>*/}
        <Settings/>
+      {/* <EditableDish/>*/}
    </>
   );
 }
