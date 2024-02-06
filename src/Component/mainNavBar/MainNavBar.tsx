@@ -4,6 +4,8 @@ import { FaRegMessage } from "react-icons/fa6";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { IoSettingsOutline } from "react-icons/io5";
 import { RiLogoutBoxRLine } from "react-icons/ri";
+import { MdDashboard } from "react-icons/md";
+import { HiDocumentReport } from "react-icons/hi";
 
 export default function MainNavBar() {
 
@@ -20,13 +22,13 @@ export default function MainNavBar() {
                     <AiOutlineHome className="text-homeicon size-6 hover:text-white"/>
                 </button>
                 <button
-                    className="h-10 md:h-12 w-full bg-customblack rounded-md mt-2 md:mt-3 flex items-center justify-evenly hover:bg-homeicon">
-                    <AiOutlineHome className="text-homeicon size-6 hover:text-white"/>
+                    className="h-10 md:h-12 w-full bg-customblack rounded-md mt-2 md:mt-3 flex items-center justify-evenly hover:bg-homeicon ">
+                    <MdDashboard  className="text-homeicon size-6 hover:text-white"/>
                 </button>
 
                     <button
                         className="h-10 md:h-12 w-full bg-customblack rounded-md mt-2 md:mt-3 flex items-center justify-evenly hover:bg-homeicon">
-                        <AiOutlineHome className="text-homeicon size-6 hover:text-white"/>
+                        <HiDocumentReport className="text-homeicon size-6 hover:text-white"/>
                     </button>
 
                 <button

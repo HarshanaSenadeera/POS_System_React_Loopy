@@ -58,8 +58,8 @@ export default function Settings() {
                 <div className="flex w-full justify-between">
                     <div className="w-2/12 ">
                         {/*Setting Options*/}
-                        <div className="flex bg-customblack  h-auto flex-col text-white items-center justify-center space-y-2 rounded-md flex-wrap flex-shrink-1 w-auto mt-5 ">
-                            <button className="btn hover:bg-button w-full rounded-md text-left py-6 px-4">
+                        <div className="flex bg-customblack  h-auto flex-col text-white items-center justify-center space-y-2 rounded-md flex-wrap flex-shrink-1 w-auto gap-5 mt-1">
+                            <button className="btn hover:bg-button w-full rounded-md text-left py-2 px-4 ">
                                 <RiHeart3Fill/> Appereance
                                 <span className="text-sm block">Dark and Light mode, Font size</span>
                             </button>
@@ -90,7 +90,8 @@ export default function Settings() {
                         </div>
                     </div>
 
-                    <div className="flex bg-customblack  h-auto flex-col text-white p-5 rounded-md flex-wrap flex-shrink-1 w-9/12 mt-5 mr-20">
+                    {/*Product management */}
+                    <div className="flex bg-customblack h-full flex-col text-white p-5 rounded-md flex-wrap flex-shrink-1 w-9/12 gap-5 mr-20 mt-1">
 
                         <div className="flex justify-between flex-wrap">
                             <div className="text-white flex text-2xl">
@@ -119,16 +120,15 @@ export default function Settings() {
                             </nav>
                         </div>
 
-                        <hr className="mt-5"/>
+                        <hr className="mt-2"/>
 
                         {/*Add edit items*/}
-                        <div className="flex flex-row gap-5 flex-wrap">
+                        <div className="flex flex-row gap-5 flex-wrap h-96 overflow-y-auto">
                             <div className="flex text-button">
                                 <button
-                                    className="w-44 h-60 bg-customblack mt-5 rounded-md border-2 border-button border-dotted">+
+                                    className="w-44 h-52 bg-customblack mt-5 rounded-md border-2 border-button border-dotted">+
                                     Add new dishes
                                 </button>
-
                             </div>
                             <EditableDish/>
                         </div>

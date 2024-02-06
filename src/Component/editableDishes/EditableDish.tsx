@@ -25,7 +25,16 @@ export default function EditableDish() {
         },
         {
             id: 2,
-            name: 'Rice',
+            name: 'Kottu',
+            href: '#',
+            price: '$500.00',
+            quantity: 5,
+            imageSrc: Hot,
+            imageAlt: 'Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt.',
+        },
+        {
+            id: 2,
+            name: 'Meals',
             href: '#',
             price: '$30.00',
             quantity: 5,
@@ -34,7 +43,52 @@ export default function EditableDish() {
         },
         {
             id: 2,
-            name: 'Rice',
+            name: 'Meals',
+            href: '#',
+            price: '$30.00',
+            quantity: 5,
+            imageSrc: Hot,
+            imageAlt: 'Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt.',
+        },
+        {
+            id: 2,
+            name: 'Meals',
+            href: '#',
+            price: '$30.00',
+            quantity: 5,
+            imageSrc: Hot,
+            imageAlt: 'Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt.',
+        },
+        {
+            id: 2,
+            name: 'Meals',
+            href: '#',
+            price: '$30.00',
+            quantity: 5,
+            imageSrc: Hot,
+            imageAlt: 'Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt.',
+        },
+        {
+            id: 2,
+            name: 'Meals',
+            href: '#',
+            price: '$30.00',
+            quantity: 5,
+            imageSrc: Hot,
+            imageAlt: 'Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt.',
+        },
+        {
+            id: 2,
+            name: 'Meals',
+            href: '#',
+            price: '$30.00',
+            quantity: 5,
+            imageSrc: Hot,
+            imageAlt: 'Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt.',
+        },
+        {
+            id: 2,
+            name: 'Meals',
             href: '#',
             price: '$30.00',
             quantity: 5,
@@ -44,34 +98,23 @@ export default function EditableDish() {
 
     ]
 
-    /*const [editableIndex, setEditableIndex] = useState(null);
-
-    const handleEditClick = ({index}: { index: any }) => {
-        setEditableIndex(index);
-    };
-
-    const handleSaveClick = () => {
-        // Implement the save logic here
-        setEditableIndex(null);
-    };*/
-
     return (
 
-
-        <div className="flex mt-5 gap-5 flex-wrap overflow-auto">
+        <div className="flex mt-5 gap-5 flex-wrap  ">
             {dishes.map((dish, index) => (
-                <div key={index} className="w-44 h-60 bg-customblack border-2 border-gray-500 rounded-md flex flex-col items-center justify-between">
+                <div key={index}
+                     className="w-44 h-60 bg-customblack border-2 border-gray-500 rounded-md flex flex-col items-center justify-between ">
                     {/* Dish Image */}
                     <div className="rounded-full bg-white w-24 h-24 mt-5">
                         <img src={dish.imageSrc} alt={dish.name}/>
                     </div>
 
                     {/* Details */}
-                    <div className="flex gap-5">
+                    <div className="flex gap-5 ">
                         <h1 className="text-white">{dish.name}</h1>
                     </div>
 
-                    <div className="flex gap-5">
+                    <div className="flex gap-5 ">
                         <h1 className="text-white">{dish.price}</h1>
                         <h1 className="text-white">{dish.quantity}</h1>
                     </div>

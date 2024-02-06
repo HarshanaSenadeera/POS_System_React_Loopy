@@ -10,12 +10,12 @@ function App() {
   return (
    <>
 
-       <Main/>
+      {/* <Main/>*/}
     {/*   <Product/>*/}
       {/* <SelectProducts/>*/}
        {/*<Conformation/>*/}
      {/*  <SelectBarTop/>*/}
-     {/*  <Settings/>*/}
+       <Settings/>
       {/* <EditableDish/>*/}
    </>
   );
