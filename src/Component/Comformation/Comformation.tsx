@@ -110,35 +110,6 @@ export default function Conformation() {
             <div className="flex bg-dishes h-screen w-1/3">
                 <div className="flex-1 overflow-y-auto px-4 py-6 sm:px-6">
 
-                    {/*<div className="flex items-start justify-between mb-5">
-
-                                                 <Dialog.Title className="text-lg font-medium  text-white">Total
-                                                    cost</Dialog.Title>
-                                                <Dialog.Title className="text-lg font-medium text-white">Total
-                                                    items</Dialog.Title>
-                                                <div className="ml-3 flex h-7 items-center">
-                                                    <button
-                                                        type="button"
-                                                        className="relative -m-2 p-2 text-gray-400 hover:text-gray-500"
-                                                        onClick={() => setOpen(false)}
-                                                    >
-
-                                                        <span className="absolute -inset-0.5"/>
-                                                        <span className="sr-only">Close panel</span>
-                                                        <XMarkIcon className="h-6 w-6" aria-hidden="true"/>
-                                                    </button>
-                                                </div>
-
-                                            </div>*/}
-
-                    {/*<div className="flex justify-center gap-7 text-white items-start flex-wrap">
-                                                <button className="bg-button h-10 w-20 rounded-md">Dine in</button>
-                                                <button className="bg-button h-10 w-20 rounded-md">To go</button>
-                                                <button className="bg-button h-10 w-20 rounded-md">Delivery</button>
-                                            </div>
-*/}
-
-
                     <div className="flex justify-between">
                         <h1 className="text-white font-bold">Conformation</h1>
                         <button className="h-10 w-16 bg-button rounded-md">+</button>

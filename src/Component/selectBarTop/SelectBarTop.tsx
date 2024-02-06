@@ -2,7 +2,7 @@ export default function SelectBarTop() {
 
     return(
 
-        <div className="flex h-full flex-col overflow-y-hidden bg-oderbar shadow-xl rounded-md">
+        <div className="flex h-auto flex-col overflow-y-hidden bg-oderbar shadow-xl rounded-md">
             <div className="flex justify-around">
                 <h2 className="text-white font-bold  flex-wrap"> Total cost :</h2>
                 <h2 className="text-white font-bold "> Total items :</h2>

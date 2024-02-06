@@ -29,42 +29,9 @@ export default function Main() {
 
             {/*Right content*/}
             <div className="h-screen w-1/12">
-                {/* Logo */}
-                {/*<div className="h-auto w-16 md:w-20 bg-customblack rounded-2xl flex flex-col flex-wrap">
-                    <img src={logo} className="items-center" alt="Logo"/>
 
-                     Buttons
-                    <button
-                        className="h-10 md:h-12 w-full bg-customblack rounded-md mt-2 md:mt-3 flex items-center justify-evenly hover:bg-homeicon">
-                        <img src={home} alt="Home Icon" className="h-5 md:h-6 w-5 md:w-6"/>
-                    </button>
-                    <button
-                        className="h-10 md:h-12 w-full bg-customblack rounded-md mt-2 md:mt-3 flex items-center justify-evenly hover:bg-homeicon">
-                        <img src={home} alt="Home Icon" className="h-5 md:h-6 w-5 md:w-6"/>
-                    </button>
-                    <button
-                        className="h-10 md:h-12 w-full bg-customblack rounded-md mt-2 md:mt-3 flex items-center justify-evenly hover:bg-homeicon">
-                        <img src={home} alt="Home Icon" className="h-5 md:h-6 w-5 md:w-6"/>
-                    </button>
-                    <button
-                        className="h-10 md:h-12 w-full bg-customblack rounded-md mt-2 md:mt-3 flex items-center justify-evenly hover:bg-homeicon">
-                        <img src={home} alt="Home Icon" className="h-5 md:h-6 w-5 md:w-6"/>
-                    </button>
-                    <button
-                        className="h-10 md:h-12 w-full bg-customblack rounded-md mt-2 md:mt-3 flex items-center justify-evenly hover:bg-homeicon">
-                        <img src={home} alt="Home Icon" className="h-5 md:h-6 w-5 md:w-6"/>
-                    </button>
-                    <button
-                        className="h-10 md:h-12 w-full bg-customblack rounded-md mt-2 md:mt-3 flex items-center justify-evenly hover:bg-homeicon">
-                        <img src={home} alt="Home Icon" className="h-5 md:h-6 w-5 md:w-6"/>
-                    </button>
-                    <button
-                        className="h-10 md:h-12 w-full bg-customblack rounded-md mt-2 md:mt-3 flex items-center justify-evenly hover:bg-homeicon">
-                        <img src={home} alt="Home Icon" className="h-5 md:h-6 w-5 md:w-6"/>
-                    </button>
-                     Repeat similar adjustments for other buttons
-                </div>*/}
                 <MainNavBar/>
+
             </div>
 
 
@@ -117,46 +84,8 @@ export default function Main() {
 
                 <div className="w-auto h-auto">
 
-                   {/* <div className="w-full h-screen bg-oderbar rounded-2xl flex flex-col gap-y-3 flex-shrink">
-                         Total cost and items
-                        <div className="flex justify-around">
-                            <h2 className="text-white font-bold  flex-wrap"> Total cost :</h2>
-                            <h2 className="text-white font-bold "> Total items :</h2>
-                        </div>
-
-                        <div className="flex justify-center gap-7 text-white items-start flex-wrap">
-                            <button className="bg-button h-10 w-20 rounded-md">Dine in</button>
-                            <button className="bg-button h-10 w-20 rounded-md">To go</button>
-                            <button className="bg-button h-10 w-20 rounded-md">Delivery</button>
-                        </div>*/}
-
                         <SelectProducts/>
-                       {/* <hr/>
 
-                        <div className="flex text-white justify-between">
-                            <h2 className="flex-wrap">Item</h2>
-                            <h2 className="flex-wrap ml-auto mr-5">qty</h2>
-                            <h2 className="flex-wrap">Price</h2>
-                        </div>
-
-                        Bottom items
-                        <div className="mt-auto ">
-                         Price handler
-                        <div className="text-white font-bold flex-shrink flex flex-col items-start flex-wrap ml-5 mb-3">
-                            <h1>Discount</h1>
-                            <h1>Service Charge</h1>
-                            <h1>Sub total</h1>
-                        </div>
-
-                         Continue payment button
-                        <div className="flex justify-center flex-wrap flex-shrink flex-col align-bottom mb-5">
-                            <button
-                                className="bg-button w-auto h-10 rounded-md items-center justify-center flex text-white">Continue
-                                to payment
-                            </button>
-                        </div>
-                        </div>
-                    </div>*/}
                 </div>
             </div>
 

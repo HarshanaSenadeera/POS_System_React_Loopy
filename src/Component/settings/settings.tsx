@@ -33,42 +33,9 @@ export default function Settings() {
 
             {/*Right content*/}
             <div className="h-screen w-1/12 ">
-                {/* Logo
-                <div className="h-auto w-16 md:w-20 bg-customblack rounded-2xl flex flex-col flex-wrap">
-                    <img src={logo} className="items-center" alt="Logo"/>
 
-                     Buttons
-                    <button
-                        className="h-10 md:h-12 w-full bg-customblack rounded-md mt-2 md:mt-3 flex items-center justify-evenly hover:bg-homeicon ">
-                        <img src={home} alt="Home Icon" className="h-5 md:h-6 w-5 md:w-6"/>
-                    </button>
-                    <button
-                        className="h-10 md:h-12 w-full bg-customblack rounded-md mt-2 md:mt-3 flex items-center justify-evenly hover:bg-homeicon">
-                        <img src={home} alt="Home Icon" className="h-5 md:h-6 w-5 md:w-6"/>
-                    </button>
-                    <button
-                        className="h-10 md:h-12 w-full bg-customblack rounded-md mt-2 md:mt-3 flex items-center justify-evenly hover:bg-homeicon">
-                        <img src={home} alt="Home Icon" className="h-5 md:h-6 w-5 md:w-6"/>
-                    </button>
-                    <button
-                        className="h-10 md:h-12 w-full bg-customblack rounded-md mt-2 md:mt-3 flex items-center justify-evenly hover:bg-homeicon">
-                        <img src={home} alt="Home Icon" className="h-5 md:h-6 w-5 md:w-6"/>
-                    </button>
-                    <button
-                        className="h-10 md:h-12 w-full bg-customblack rounded-md mt-2 md:mt-3 flex items-center justify-evenly hover:bg-homeicon">
-                        <img src={home} alt="Home Icon" className="h-5 md:h-6 w-5 md:w-6"/>
-                    </button>
-                    <button
-                        className="h-10 md:h-12 w-full bg-customblack rounded-md mt-2 md:mt-3 flex items-center justify-evenly hover:bg-homeicon">
-                        <img src={home} alt="Home Icon" className="h-5 md:h-6 w-5 md:w-6"/>
-                    </button>
-                    <button
-                        className="h-10 md:h-12 w-full bg-customblack rounded-md mt-2 md:mt-3 flex items-center justify-evenly hover:bg-homeicon">
-                        <img src={home} alt="Home Icon" className="h-5 md:h-6 w-5 md:w-6"/>
-                    </button>
-                     Repeat similar adjustments for other buttons
-                </div>*/}
                 <MainNavBar/>
+
             </div>
 
             {/*Middle content*/}
